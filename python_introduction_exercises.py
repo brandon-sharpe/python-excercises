@@ -8,5 +8,6 @@ print("Hello, World!")
 # Run your script interactively
 # (with python -i python_introduction_exercises.py) 
 # and view the contents of the greeting variable.
-greeting = "Hello my name is Brandon and this is my first line of code for the Germain Cohort."
-
+greeting = "My name is Brandon and this is my first line of code for the Germain Cohort."
+print()
+print(greeting)
