@@ -19,3 +19,18 @@ elif is_it_the_weekend.lower() == "sunday":
 
 else:
     print("   Damn today is a weekday!")
+
+# # 1.C) create variables and make up values for
+# the number of hours worked in one week
+# the hourly rate
+# how much the week's paycheck will be
+# write the python code that calculates the weekly paycheck. 
+# You get paid time and a half if you work more than 40 hours
+
+hours_per_week= 60
+hourly_rate =45
+
+if hours_per_week > 40:
+    print((hours_per_week - 40)* hourly_rate*1.5 + 40*hourly_rate)
+else:
+    print(hours_per_week*hourly_rate)
