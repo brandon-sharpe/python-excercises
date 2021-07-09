@@ -87,3 +87,74 @@ number_of_letters = [len(f) for f in fruits ]
 print(f"#8: Make a list containing the number of characters in each fruit.")
 print(number_of_letters)
 print()
+
+# Exercise 9 - Make a variable named fruits_with_letter_a that contains a list of only the fruits that contain the letter "a"
+fruits_with_letter_a= [f for f in fruits if "a" in f]
+print(f"#9: Make a variable named fruits_with_letter_a that contains a list of only the fruits that contain the letter 'a'")
+print(fruits_with_letter_a)
+print()
+
+#Exercise 10 Make a variable named even_numbers that holds only the even numbers
+even_numbers= [number for number in numbers if number % 2 == 0 ]
+print(f"# 10: Make a variable named even_numbers that holds only the even numbers")
+print (even_numbers)
+print()
+
+# Exercise 11 - Make a variable named odd_numbers that holds only the odd numbers
+odd_numbers= [number for number in numbers if number not in even_numbers]
+print(f"# 11: Make a variable named odd_numbers that holds only the odd numbers")
+print (odd_numbers)
+print()
+
+# Exercise 12 - Make a variable named positive_numbers that holds only the positive numbers
+positive_numbers= [number for number in numbers if number > 0 ]
+print(f"# 12: Make a variable named positive_numbers that holds only the positive numbers")
+print (positive_numbers)
+print()
+
+# Exercise 13 - Make a variable named negative_numbers that holds only the negative numbers
+negative_numbers= [number for number in numbers if number not in positive_numbers]
+print(f"# 13: Make a variable named negative_numbers that holds only the negative numbers")
+print (negative_numbers)
+print()
+
+# Exercise 14 - use a list comprehension w/ a conditional in order to produce a list of numbers with 2 or more numerals
+more_than_one_numeral = [number for number in numbers if number > 10 or number<-10]
+print(f"# 14: Use a list comprehension w/ a conditional in order to produce a list of numbers with 2 or more numerals")
+print(more_than_one_numeral)
+print()
+
+# Exercise 15 - Make a variable named numbers_squared that contains the numbers list with each element squared. Output is [4, 9, 16, etc...]
+print(f"# 15: Make a variable named numbers_squared that contains the numbers list with each element squared")
+numbers_squared = [number**2 for number in numbers]
+print(numbers_squared)
+print()
+
+# Exercise 16 - Make a variable named odd_negative_numbers that contains only the numbers that are both odd and negative.
+odd_negative_numbers = [number for number in numbers if number in negative_numbers and number in odd_numbers]
+print(f"# 16: Make a variable named odd_negative_numbers that contains only the numbers that are both odd and negative.")
+print(odd_negative_numbers)
+print()
+
+# Exercise 17 - Make a variable named numbers_plus_5. In it, return a list containing each number plus five.
+numbers_plus_5 = [number+5 for number in numbers]
+print(f"# 17:Make a variable named numbers_plus_5. In it, return a list containing each number plus five.")
+print(numbers_plus_5)
+print()
+
+# BONUS Make a variable named "primes" that is a list containing the prime numbers in the numbers list
+def is_prime(num):
+    if num in [2, 3]:
+        return True
+    if num > 1:
+        for i in range(2, num):
+            if (num % i ) == 0:
+                return False
+    else:
+        return False
+    return True
+
+primes = [num for num in numbers if is_prime(num) == True]
+print(f"Bonus: Make a variable named 'primes' that is a list containing the prime numbers in the numbers list ")
+print(primes)
+                
