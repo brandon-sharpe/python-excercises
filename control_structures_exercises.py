@@ -105,9 +105,9 @@ while i >= 5:
 
 # For example, if the user enters 7, 
 # your program should output:
-
+user_num2 = int(input(" Input a positive number >>"))
 for i in range(1,11):
-    print (f"7 x {i} = {7 * i}")
+    print (f"{user_num2} x {i} = {user_num2 * i}")
 
 # Create a for loop that uses print to create 
 # the output shown below.
