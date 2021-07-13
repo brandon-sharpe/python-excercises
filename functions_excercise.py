@@ -85,13 +85,13 @@ print(apply_discount(100))
 
 def get_letter_grade(grade):
     if type(grade) == int:
-        if grade >= 90 and grade <= 100:
+        if grade >= 90:
             return "A"
-        elif grade >=80 and grade <= 90:
+        elif grade >=80:
             return "B"
-        elif grade >=70 and grade <= 80:
+        elif grade >=70:
             return "C"
-        elif grade >=60 and grade <= 70:
+        elif grade >=60:
             return "D"
         else:
             return "F"
